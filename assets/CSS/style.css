@@ -1,0 +1,12 @@
+.landing-page{
+    background: url(https://picsum.photos/2000/1000);
+    background-position: center center;
+    background-size: cover;
+    color: #FFF;
+    height: 100vh;
+}
+
+.landing-title{
+    padding-top: 45vh;
+    font-size: 500%;
+}
