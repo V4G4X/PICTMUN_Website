@@ -1,12 +1,39 @@
-.landing-page{
-    background: url(https://picsum.photos/2000/1000);
-    background-position: center center;
-    background-size: cover;
-    color: #FFF;
-    height: 100vh;
+.landing-page {
+  background: url(https://picsum.photos/2000/1000) fixed;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
 }
 
-.landing-title{
-    padding-top: 45vh;
-    font-size: 500%;
+.half-page {
+  min-height: 50vh;
+}
+
+.landing-title {
+  padding-top: 40vh;
+}
+.landing-title > p {
+  font-size: 150%;
+}
+
+.d-inline-flex {
+  height: 75%;
+}
+
+.huge {
+  font-size: 200%;
+}
+.tiiny {
+  font-size: 50% !important;
+}
+
+.vertical-center {
+  display: flex !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.text-black {
+  color: black !important;
 }
