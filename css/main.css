@@ -243,7 +243,7 @@ section.hero .inner-hero {
     height: 24px;
     position: absolute;
     right: 15px;
-    top: -30px;
+    top: -40px;
     z-index: 1000;
     display: none;
 }
@@ -1400,3 +1400,39 @@ select.error {
     }
 }
 /*End media queries*/
+
+
+/* Begin Custom CSS */
+.grey{
+    color:grey;
+    font-weight: bold;
+}
+.timer {
+    display:inline;
+    font-size: 200%;
+}
+
+.pad-left{
+    padding-left: 10%;
+}
+
+.logo > img{
+    max-width: 150px;
+}
+
+.main-nav {
+    padding-top: 1%;
+ }
+  
+.scroll{
+    font-size: 125%;
+ }
+
+.map-container{
+    padding: 3%;
+    padding-right: 0;
+}
+
+.map {
+    border-radius: 25px;
+}
