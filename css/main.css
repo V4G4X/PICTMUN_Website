@@ -739,7 +739,7 @@ select.error {
     width: 85%;
 }
 .block-sponsor img:hover {
-    opacity: .4;
+    opacity: 1;
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
@@ -1429,8 +1429,8 @@ select.error {
  }
 
 .map-container{
-    padding: 100px;
-    padding-left: 5%;
+    padding: 40px;
+    padding-left: 10%;
     padding-right: 0;
 }
 
@@ -1442,6 +1442,11 @@ select.error {
     padding: 0;
     height:300px;
     max-height: none;
+}
+
+.post{
+    text-align: center;
+    font-size: 200%;
 }
 
 .tigher{
@@ -1464,7 +1469,7 @@ select.error {
         width: 85%;
     }
     .block-sponsor img {
-        opacity: .4;
+        opacity: .9;
         transform: scale(1.05);
         -webkit-transform: scale(1.05);
         -ms-transform: scale(1.05);
@@ -1637,10 +1642,16 @@ select.error {
 }
 @media (max-width:767px)
 {
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
+    .social-icons li.title
+    {
+        display:block;
+        margin-right:0;
+        font-weight:600
+    }
+}
+
+@media (min-width:768px){
+    .block-img.overlay.soft{
+        height:700px !important;
+    }
 }
