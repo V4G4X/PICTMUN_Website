@@ -1031,6 +1031,10 @@ select.error {
     .block-sponsor img {
         width: 100%;
     }
+    .block-speaker .block-img .background-img {
+        filter: grayscale(0) !important;
+        -webkit-filter: grayscale(0) !important;
+    }
 }
 @media only screen and (min-device-width: 720px) and (max-device-width: 1280px) and (orientation: portrait) {
     input,
@@ -1117,6 +1121,10 @@ select.error {
         -webkit-appearance: none;
         -webkit-border-radius: 0;
     }
+    .block-speaker .block-img .background-img {
+        filter: grayscale(0) !important;
+        -webkit-filter: grayscale(0) !important;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 960px) {
     input,
@@ -1183,7 +1191,7 @@ select.error {
         margin-top: 5px;
     }
 }
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 400px) and (max-width: 767px) {
     input,
     textarea {
         -webkit-appearance: none;
@@ -1287,6 +1295,10 @@ select.error {
     .insta-Feed li:before,
     .insta-Feed li a:before {
         content: none;
+    }
+    .block-speaker .block-img .background-img {
+        filter: grayscale(0) !important;
+        -webkit-filter: grayscale(0) !important;
     }
 }
 @media only screen and (max-width: 479px) {
