@@ -1429,7 +1429,7 @@ select.error {
  }
 
 .map-container{
-    padding: 10%;
+    padding: 100px;
     padding-left: 5%;
     padding-right: 0;
 }
@@ -1438,8 +1438,38 @@ select.error {
     border-radius: 25px;
 }
 
+.map-small{
+    padding: 0;
+    height:300px;
+    max-height: none;
+}
+
 .tigher{
   max-width: 1000px;
+}
+
+@media (min-width: 768px) {
+    .quarter-width{
+        width:25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .block-sponsor{
+        margin-bottom: 25px !important;
+    }
+
+    .block-sponsor img {
+        opacity: .2;
+        width: 85%;
+    }
+    .block-sponsor img {
+        opacity: .4;
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+    }
 }
 
 .right-side{
