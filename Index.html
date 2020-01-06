@@ -417,38 +417,10 @@
          </div>
          <!--End container-->
          <div class="container">
-            <div class="card" id="Principal">
+            <div class="card" id="SecGen">
                <div class="row ">
                   <div class="col-md-4">
-                     <img src="img/princi.jpg" class="addressal-img" alt="">
-                     <p class="text-center des" style="font-size: 1rem;">
-                        Dr. P.T. Kulkarni
-                        <br> Principal, PICT,Pune
-                     </p>
-                  </div>
-                  <div class="col-md-8 px-3 float-left">
-                     <div class="card-block px-6">
-                        <!-- <h4 class="card-title">Addressal </h4> -->
-                        <p class="card-text">
-                           It is with great pleasure that I introduce you to the fourth edition of the esteemed
-                           PICT-MUN. It is my strong belief that confidence builds when you have the courage to test it.
-                           PICT-MUN hopes to provide you with a platform to enhance your ability to think, to analyse
-                           and to use your mind to its extreme capacity so that you take that very first step to
-                           stepping into what is known as the real world. <br> Through this experience, we hope to
-                           provide
-                           you with an insight and an edge over the other competitors in the world today. I welcome you
-                           to this mind-numbing debate and wish you luck with your endeavours. </p>
-                        <br>
-                     </div>
-                  </div>
-
-               </div>
-
-            </div>
-            <div class="card" id="SecGen" style="display: none;">
-               <div class="row ">
-                  <div class="col-md-4">
-                     <img src="img/princi.jpg" class="addressal-img" alt="">
+                     <img src="assets/sec/Jash.jpeg" class="addressal-img" alt="">
                      <p class="text-center des" style="font-size: 1rem;">
                         Secretary General
                         <br>PICT MUN
@@ -472,9 +444,36 @@
                         <br>
                      </div>
                   </div>
-
                </div>
             </div>
+            <div class="card" id="Principal" style="display: none;">
+               <div class="row ">
+                  <div class="col-md-4">
+                     <img src="img/princi.jpg" class="addressal-img" alt="">
+                     <p class="text-center des" style="font-size: 1rem;">
+                        Dr. P.T. Kulkarni
+                        <br> Principal, PICT,Pune
+                     </p>
+                  </div>
+                  <div class="col-md-8 px-3 float-left">
+                     <div class="card-block px-6">
+                        <!-- <h4 class="card-title">Addressal </h4> -->
+                        <p class="card-text">
+                           It is with great pleasure that I introduce you to the fourth edition of the esteemed
+                           PICT-MUN. It is my strong belief that confidence builds when you have the courage to test it.
+                           PICT-MUN hopes to provide you with a platform to enhance your ability to think, to analyse
+                           and to use your mind to its extreme capacity so that you take that very first step to
+                           stepping into what is known as the real world. <br> Through this experience, we hope to
+                           provide
+                           you with an insight and an edge over the other competitors in the world today. I welcome you
+                           to this mind-numbing debate and wish you luck with your endeavours. </p>
+                        <br>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+
          </div>
       </section>
 
@@ -921,16 +920,37 @@
    <script src="js/jquery.validate.min.js" type="text/javascript"></script>
    <script src="js/venobox.min.js" type="text/javascript"></script>
    <script src="js/script.js" type="text/javascript"></script>
+   <!-- Script to change Addressals on Click -->
    <script>
       $("#Sec").click(function () {
          $("#Principal").fadeOut();
-         $("#SecGen").fadeIn("slow");
+         setTimeout(function name() {
+            $("#SecGen").fadeIn("slow");
+         }, 200);
       });
-
       $("#princi").click(function () {
          $("#SecGen").fadeOut();
-         $("#Principal").fadeIn("slow");
+         setTimeout(function name(params) {
+            $("#Principal").fadeIn("slow");
+         }, 200);
       });
+   </script>
+   <!-- Script that changes Addressal every 10 seconds -->
+   <script>
+      let i = 0;
+      setInterval(function () {
+         if ((++i) % 2) {
+            $("#SecGen").fadeOut();
+            setTimeout(function name(params) {
+               $("#Principal").fadeIn("slow");
+            }, 200);
+         } else {
+            $("#Principal").fadeOut();
+            setTimeout(function name() {
+               $("#SecGen").fadeIn("slow");
+            }, 200);
+         }
+      }, 10000);
    </script>
 </body>
 
