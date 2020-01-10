@@ -1679,3 +1679,7 @@ select.error {
 #IP {
   height: 59%;
 }
+
+.close {
+  font-size: 35px;
+}
