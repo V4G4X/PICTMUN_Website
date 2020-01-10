@@ -1658,7 +1658,7 @@ select.error {
 
 @media (min-width: 768px) {
   .block-img.overlay.soft {
-    height: 700px !important;
+    /* height: 700px !important; */
   }
 }
 
@@ -1670,4 +1670,16 @@ select.error {
   .speakers h1 {
     font-size: 50px;
   }
+}
+
+.btn-default{
+  color: white;
+}
+
+#IP {
+  height: 59%;
+}
+
+.close {
+  font-size: 35px;
 }
